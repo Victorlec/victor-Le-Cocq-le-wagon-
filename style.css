@@ -1,0 +1,120 @@
+/* Style de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e3799;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #82ccdd;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+/* Style des cartes */
+.card-white {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-white:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background-color: #1e3799;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #82ccdd;
+    transform: translateY(-2px);
+}
+
+/* Liste des projets */
+.project-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.project-list li {
+    padding: 5px 0;
+    color: #555;
+    border-bottom: 1px solid #eee;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3799;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .card-white {
+        padding: 20px;
+    }
+}
